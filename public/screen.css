@@ -10,7 +10,7 @@ body {
   background-color: hsla(205, 79%, 5%, 1);
 }
 
-header {
+header.about-me {
   border: 3px solid goldenrod;
   background-image: url(./images/background_space.png);
   background-size: cover;
@@ -19,7 +19,7 @@ header {
   height: 100%;
 }
 
-header div {
+header.about-me div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -38,7 +38,7 @@ header div {
   /*align-self: center;*/
 }
 
-header ul {
+header.about-me ul {
   /*border: 3px solid goldenrod;*/
   width: 100%;
   display: flex;
@@ -49,7 +49,7 @@ header ul {
   padding: 1em;
 }
 
-header li img {
+header.about-me li img {
   border: 3px solid goldenrod;
   /*width:  5em;
   height: 3em;*/
@@ -117,7 +117,7 @@ article {
   border-radius: 0.25em;
 }
 
-article p {
+article header {
   height: 4em;
   width: 100%;
   background-repeat: no-repeat;
