@@ -1,5 +1,5 @@
 html {
-  min-height: 100%;
+  /*min-height: 100%;*/
   text-size-adjust: 100%;
 }
 
@@ -9,10 +9,7 @@ body {
   background-color: hsla(205, 79%, 5%, 1);
 }
 
-header.topheader {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+header {
   background-image: url(./images/background_space.png);
   background-size: cover;
   background-position: center;
@@ -20,14 +17,20 @@ header.topheader {
   height: 100%;
 }
 
+header div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .myphoto {
-  width: 200px;
-  height: 200px;
+  width: 10em;
+  height: 10em;
   border-radius: 0.25em;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 1em;
+  margin: 4em;
   /*align-self: center;*/
 }
 
@@ -36,16 +39,50 @@ header ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style-type: none;
+  background-color: hsla(205, 79%, 5%, 0.5);
+  padding: 1em;
 }
 
 header li img {
   /*width:  5em;
   height: 3em;*/
-  border-radius: 0.25em;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  border-radius: 0.25em;
 }
+
+blockquote {
+  background-color: hsla(0, 100%, 100%, 0.5);
+  border-radius: 0.25em;
+  padding: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+
+.triangle::after {
+  content: "";
+  background-image: url(./images/tri.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  height: 50px;
+  width: 50px;
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  left: 22px;
+}
+
+blockquote h1 {
+  color: hsla(0, 0%, 21%, 1);
+}
+
+blockquote h4 {
+  color: hsla(0, 0%, 21%, 1);
+}
+
 
 /*@media (max-width: 768px) {
   header ul {
@@ -61,39 +98,6 @@ header li img {
 
 }*/
 
-blockquote {
-  background-color: hsla(0, 100%, 100%, 0.5);
-  border-radius: 0.25em;
-  padding: 1.5em;
-  margin-top: 1em;
-  margin-bottom: 4em;
-}
-
-blockquote.triangle::after {
-  content: "";
-  background-image: url(./images/tri.png);
-  opacity: 0.2;
-  height: 20px;
-  width: 20px;
-  display: block;
-  position: absolute;
-  bottom: -20px;
-  left: 22px;
-}
-
-blockquote h1 {
-  color: hsla(0, 0%, 21%, 1);
-}
-
-blockquote h4 {
-  color: hsla(0, 0%, 21%, 1);
-}
-
-header ul {
-  background-color: hsla(0, 0%, 0%, 0.5);
-  list-style-type: none;
-}
-
 main {
   background-color: #031019;
   color: white;
@@ -106,8 +110,22 @@ article {
   border-radius: 0.25em;
 }
 
+article img {
+  height: 4em;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.25em 0.25em 0 0;
+}
+
 article div {
   padding: 1em;
+}
+
+time {
+  font-size: .75em;
+  font-weight: lighter;
 }
 
 .keepreading {
