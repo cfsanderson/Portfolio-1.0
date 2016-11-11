@@ -126,13 +126,6 @@ article p {
   border-radius: 0.25em 0.25em 0 0;
 }
 
-article p.hello-react {
-  background-image: url('./images/header_react.png');
-}
-
-article p.fizz-buzz {
-  background-image: url('./images/header_code.png');
-}
 
 article div {
   padding: 1em;
