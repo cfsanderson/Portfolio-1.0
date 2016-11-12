@@ -90,7 +90,6 @@ section.game-thumbs {
 
 .thumbs p {
   display: flex;
-  flex-wrap: wrap;
   width: 15em;
   height: 10.5em;
   background-repeat: no-repeat;
@@ -102,6 +101,7 @@ section.game-thumbs {
 
 .thumbs {
   display: flex;
+  flex-wrap: wrap;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
