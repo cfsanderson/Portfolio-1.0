@@ -82,25 +82,31 @@ height: 200px;
 section.game-thumbs {
   background-color: hsla(205, 79%, 5%, 0.5);
   padding: 1em;
-  display: flex;
+  /*display: flex;
   flex: 1;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
   /*justify-content: flex-start;*/
 }
 
-.game-thumbs p {
-  /*border: 3px solid goldenrod;*/
+.thumbs p {
+  display: flex;
+  flex-wrap: wrap;
   width: 15em;
   height: 10.5em;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 0.3em;
+  margin: 1em;
+}
+
+.thumbs {
   display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.3em;
   justify-content: center;
-  align-items: center;
-  /*margin: 1em;*/
-  /*justify-content: space-between;*/
 }
 
 main {
