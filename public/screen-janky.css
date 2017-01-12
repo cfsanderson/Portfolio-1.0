@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  font-family: Brandon Grotesque, sans-serif;
   font-kerning: 0.25em;
   margin: 0;
   background-color: hsla(205, 79%, 5%, 1);
@@ -30,6 +29,8 @@ section.about-me {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  border: solid 5px;
+  border-color: var(--accent-color);
 }
 
 blockquote {
@@ -50,16 +51,17 @@ blockquote {
 }
 
 blockquote h1 {
-  color: hsla(0, 0%, 21%, 1);
+  color: var(--font-color);
   margin-top: 0.1em;
   font-weight: lighter;
   font-size: 2em;
 }
 
 blockquote h4 {
-  color: hsla(0, 0%, 21%, 1);
+  color: var(--font-color);
   margin-bottom: 0;
   font-weight: normal;
+  font-size: 1.5em;
 }
 
 .thumbs {
@@ -85,6 +87,8 @@ blockquote h4 {
   margin-bottom: 1em;
   text-align: center;
   font-size: 1.5em;
+  border: solid 5px;
+  border-color: var(--accent-color);
 }
 
 @media (max-width: 600px) {
@@ -96,6 +100,8 @@ blockquote h4 {
     width: 8em;
     height: 8em;
     border-radius: 0.3em;
+    border: solid 10px;
+    border-color: var(--accent-color);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,7 +111,7 @@ blockquote h4 {
   blockquote {
     background-color: hsla(0, 100%, 100%, 0.6);
     border-radius: 0.3em;
-    padding: 1em;
+    padding: var(--padding);
     margin: 2em;
   }
 
@@ -145,12 +151,12 @@ blockquote h4 {
   }
 }
 
-.thumbs li {
+/*.thumbs li {
 
-}
+}*/
 
 main {
-  background-image: url(./images/ami-city-pier-2.jpg);
+  /*background-image: url(./images/ami-city-pier-2.jpg);*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,6 +166,7 @@ article {
   background-color: hsla(0, 100%, 100%, 1);
   color: hsla(0, 0%, 21%, 0.75);
   margin: 2.5em;
+  padding: var(--padding);
   border-radius: 0.3em;
 }
 
@@ -222,20 +229,20 @@ footer li {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  color: hsla(0, 0%, 21%, 0.75)
+  color: var(--font-color);
 }
 
 footer a {
   color: white;
   text-indent: 0;
-  color: hsla(0, 0%, 21%, 0.75)
+  color: var(--font-color);
 }
 
 footer h5 {
   text-align: center;
   font-size: 1em;
   padding: 1em;
-  color: hsla(0, 0%, 21%, 0.75);
+  color: var(--font-color);
 }
 
 @media (max-width: 600px) {
@@ -269,42 +276,60 @@ footer h5 {
   }
 }
 
+/* Wes Bos CSS */
+
 :root {
-  --base: #ffc600;
-  --spacing: 10px;
-  --blur: 10px;
+  --accent-color: #0d26cb;
+  --padding: 0;
+  --blur: 0;
+  --font-main: Times New Roman;
+  --font-color: #fff;
+  --background-color: #9f9f9f;
+  --font-size: 16px;
 }
 
 img {
-  padding: var(--spacing);
-  background: var(--base);
+  padding: var(--padding);
+  background: var(--accent-color);
   filter: blur(var(--blur));
 }
 
-.hl {
-  color: var(--base);
-}
-
-/*
-  misc styles, nothing to do with CSS variables
-*/
-
 body {
-  text-align: center;
-}
-
-body {
-  background: #BADA55;
-  color: white;
-  font-family: 'helvetica neue', sans-serif;
+  background: var(--background-color);
+  color: var(--font-color);
+  font-family: var(--font-main);
   font-weight: 100;
-  font-size: 50px;
+  text-align: center;
+  font-size: var(--font-size);
+}
+
+h1.header {
+  border: solid;
+  border-color: var(--accent-color);
+  border-radius: 20px;
+  padding: var(--padding);
+}
+
+select {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+.accent-color {
+  color: var(--accent-color);
 }
 
 .controls {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
-  width:100px;
+  width: 200px;
+  height: 40px;
 }
